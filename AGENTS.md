@@ -73,6 +73,7 @@ Documentation must reflect reality.
 * Do NOT silently change architecture.
 * Do NOT optimize prematurely.
 * Do NOT add speculative features.
+* Always read/write project text files with UTF-8 encoding unless a different encoding is explicitly required.
 If uncertain → Ask or proceed minimally.
 
 ## 🗂 memory-bank Policy（記憶庫原則）
