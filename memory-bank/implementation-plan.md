@@ -10,31 +10,41 @@
 
 ## 🧩 任務拆解（Task Breakdown）
 
-### 階段 1
+### 任務 1
 * 目標（Goal）：
 * 交付成果（Deliverable）：
 * 測試方式（Test Method）：
+* 狀態（Status）：Todo / Doing / Done / Blocked
 
-### 階段 2
+### 任務 2
 * 目標（Goal）：
 * 交付成果（Deliverable）：
 * 測試方式（Test Method）：
+* 狀態（Status）：Todo / Doing / Done / Blocked
 
-### 階段 3
+### 任務 3（可選）
 * 目標（Goal）：
 * 交付成果（Deliverable）：
 * 測試方式（Test Method）：
+* 狀態（Status）：Todo / Doing / Done / Blocked
 
 
 ## 🧪 測試策略（Testing Strategy）
-* 單元測試方式：xUnit + FluentAssertions
-* 整合測試方式：Testcontainers（PostgreSQL）
-* API 測試：Postman / REST Client
-* 手動驗證步驟（Manual Validation Steps）：
+* 測試層級（Test Levels）：
+  * 單元測試（Unit Tests）: xUnit + FluentAssertions
+  * 整合測試（Integration Tests）: Testcontainers（PostgreSQL）
+  * 端到端 / API 測試（E2E / API Tests）: Postman / REST Client
+* 驗收標準（Acceptance Criteria）：
+  * 核心流程可通過驗收案例
+  * 關鍵錯誤路徑有覆蓋
+  * 無阻斷性回歸（No Blocking Regression）
+* 需要手動測試時請提示 
 
 
 ## ⚠️ 風險紀錄（Risk Log）
-* 已識別風險（Identified Risks）：
-* 緩解方案（Mitigation Plan）：
-* 待確認問題（Open Questions）：
+* 風險項目（Risk Item）：
+  * 風險描述（Description）：
+  * 影響程度（Impact: High/Medium/Low）：
+  * 緩解方案（Mitigation）：
+  * 目前狀態（Status: Open/Mitigated/Closed）：
 

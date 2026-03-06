@@ -9,12 +9,10 @@
 * 可量化成功標準（Measurable Success Criteria）：
 
 ## 🚫 非目標範圍（Out of Scope）
-* 明確排除功能：
-* 不處理事項：
+* 排除與不處理事項（Excluded Scope）：
 
 
 ## 🧭 使用情境（User Scenarios）
-
 ### 情境 1
 * 情境描述（Scenario Description）：
 * 預期行為（Expected Behavior）：
@@ -23,8 +21,9 @@
 * 情境描述（Scenario Description）：
 * 預期行為（Expected Behavior）：
 
+
 ## 📌 產品層級限制（Product Constraints）
 
 * 商業限制（Business Constraints）：
 * 法規 / 合規要求（Compliance Requirements）：
-* 效能期望（Performance Expectations）：
+* 效能目標（產品層級）（Performance Goals, product-level only）：
