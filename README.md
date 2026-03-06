@@ -78,12 +78,32 @@ memory-bank/
 
 ---
 
+# 文件最小填寫門檻（Minimum Required Before Coding）
+
+開始開發前，至少完成以下內容：
+
+* `game-design-document.md`：填寫「問題定義」、「主要成果」、「可量化成功標準」、「Out of Scope」
+* `tech-stack.md`：確認使用技術與依賴政策
+* `implementation-plan.md`：至少填完「任務 1」（目標 / 交付成果 / 測試方式 / 狀態）
+
+若以上未完成，先補文件再開始實作，避免方向漂移與重工。
+
+---
+
 # 三、使用原則
 
 * 每次只做一個小步驟
 * 每次都要可運行
 * 文件必須反映實際狀態
 * 不做過度預測規劃
+
+---
+
+# 快捷提示（CLI Intent Shortcuts）
+
+* `status`：摘要目前狀態
+* `next`：執行下一個最小有意義步驟
+* `fix`：分析錯誤並提出最小修正
 
 ---
 
