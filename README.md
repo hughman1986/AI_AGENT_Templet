@@ -7,6 +7,8 @@
 
 本文件僅說明「開發者需要做的事情」。
 
+參考: [Ultimate Guide to Vibe Coding](https://github.com/EnzeD/vibe-coding.git)
+
 ---
 
 # 一、初始化專案
