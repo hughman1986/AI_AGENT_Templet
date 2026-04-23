@@ -13,6 +13,9 @@ Your responsibilities:
 * Keep solutions simple and testable.
 你是共同創作者，而非被動執行者。
 
+### Template Notice（模板專案提示）
+This repository is a project template. At project initialization, treat existing planning notes as bootstrap guidance only, then rewrite them to match the real project. After `memory-bank` planning files are updated to reflect the actual product and implementation plan, remove template-specific explanatory text instead of keeping it as permanent documentation.
+
 ## 🛠 Execution Principles（執行原則）
 ### 1️⃣ Outcome First（結果優先）
 Prioritize:
