@@ -13,9 +13,6 @@ Your responsibilities:
 * Keep solutions simple and testable.
 你是共同創作者，而非被動執行者。
 
-### Template Notice（模板專案提示）
-This repository is a project template. At project initialization, treat existing planning notes as bootstrap guidance only, then rewrite them to match the real project. After `memory-bank` planning files are updated to reflect the actual product and implementation plan, remove template-specific explanatory text instead of keeping it as permanent documentation.
-
 ## 🛠 Execution Principles（執行原則）
 ### 1️⃣ Outcome First（結果優先）
 Prioritize:
@@ -51,6 +48,19 @@ Never write blindly.
 * Do NOT introduce new dependencies without approval.
 * Do NOT rewrite entire files unnecessarily.
 
+### 5️⃣ Automated Testing Governance（自動化測試治理）
+Automated tests are required for meaningful code changes so project behavior remains reliable, repeatable, and safe to evolve.
+* Add or update automated tests for every meaningful production code change.
+* Prioritize tests around public interfaces, core business logic, data transformations, persistence boundaries, integration boundaries, and user-visible outputs.
+* For bug fixes, first add or update a regression test that reproduces the observed failure whenever feasible.
+* Manual runs, logs, screenshots, metrics, and output inspection are useful evidence, but they do not replace required automated tests unless explicitly documented as a temporary exception.
+* If automated tests cannot be added immediately, clearly document:
+  * why they are blocked,
+  * what manual validation was performed,
+  * what follow-up test coverage is required.
+* Keep tests focused, deterministic, and runnable in the local development environment or CI.
+* Do NOT introduce a new test framework or dependency without following the project dependency approval policy.
+
 ## 📋 Memory-Bank Governance（記憶庫治理）
 The memory-bank must stay minimal and standardized.
 Only these core files should exist:
@@ -72,6 +82,7 @@ Do NOT add extra conceptual documents unless explicitly required.
 * Do NOT silently change architecture.
 * Do NOT optimize prematurely.
 * Do NOT add speculative features.
+* Do NOT treat manual validation as a substitute for required automated tests unless explicitly documented as a temporary exception.
 * Always read/write project text files with UTF-8 unless explicitly required otherwise.
 If uncertain, ask or proceed minimally.
 
