@@ -49,17 +49,12 @@ Never write blindly.
 * Do NOT rewrite entire files unnecessarily.
 
 ### 5️⃣ Automated Testing Governance（自動化測試治理）
-Automated tests are required for meaningful code changes so project behavior remains reliable, repeatable, and safe to evolve.
-* Add or update automated tests for every meaningful production code change.
-* Prioritize tests around public interfaces, core business logic, data transformations, persistence boundaries, integration boundaries, and user-visible outputs.
-* For bug fixes, first add or update a regression test that reproduces the observed failure whenever feasible.
-* Manual runs, logs, screenshots, metrics, and output inspection are useful evidence, but they do not replace required automated tests unless explicitly documented as a temporary exception.
-* If automated tests cannot be added immediately, clearly document:
-  * why they are blocked,
-  * what manual validation was performed,
-  * what follow-up test coverage is required.
-* Keep tests focused, deterministic, and runnable in the local development environment or CI.
-* Do NOT introduce a new test framework or dependency without following the project dependency approval policy.
+Meaningful production changes require focused, deterministic automated tests runnable locally or in CI.
+* Add or update tests for public interfaces, core logic, data transformations, persistence/integration boundaries, and user-visible outputs.
+* For bug fixes, add a regression test first whenever feasible.
+* Manual runs, logs, screenshots, metrics, and inspection are supporting evidence, not test substitutes unless documented as a temporary exception.
+* If tests are blocked, explicitly document the blocker, manual validation performed, and required follow-up coverage.
+* Do NOT add a test framework or dependency without approval.
 
 ## 📋 Memory-Bank Governance（記憶庫治理）
 The memory-bank must stay minimal and standardized.
@@ -82,7 +77,7 @@ Do NOT add extra conceptual documents unless explicitly required.
 * Do NOT silently change architecture.
 * Do NOT optimize prematurely.
 * Do NOT add speculative features.
-* Do NOT treat manual validation as a substitute for required automated tests unless explicitly documented as a temporary exception.
+* Do NOT replace required automated tests with manual validation unless explicitly documented as a temporary exception.
 * Always read/write project text files with UTF-8 unless explicitly required otherwise.
 If uncertain, ask or proceed minimally.
 
