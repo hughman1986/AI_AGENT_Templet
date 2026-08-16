@@ -13,6 +13,10 @@
 > 說明（Hint）：
 > * `目標（Goal）`：描述這個大任務要解決的問題或想達成的結果，聚焦「為什麼做」。
 > * `交付成果（Deliverable）`：描述完成後實際會產出的功能、模組、流程或頁面，聚焦「做完會看到什麼」。
+> * `任務複雜度提示（Complexity Hint）`：快速判斷執行任務時應優先使用哪一類模型。
+>   * `Simple`：單一且明確的步驟、低風險、少量檔案變更；優先使用簡單模型。
+>   * `Medium`：涉及多個檔案，或需要基本分析與驗證；依任務上下文選擇模型。
+>   * `Complex`：跨模組或架構、需求不明、風險高，或需要多輪驗證；優先使用複雜模型。
 > * 建議寫法：
 >   * 目標：讓[誰/哪個系統]可以[完成什麼事]，以解決[什麼問題]
 >   * 交付成果：完成[功能/模組 A]、[功能/模組 B]、[流程/頁面/API C]
@@ -21,6 +25,7 @@
 > ### 大任務範例：建立登入功能
 > * 目標（Goal）：讓使用者可以安全登入系統，進入受保護功能
 > * 交付成果（Deliverable）：完成登入頁、帳密驗證流程、登入成功後導向主畫面
+> * 任務複雜度提示（Complexity Hint）：Medium
 > * 狀態（Status）：Todo / Doing / Done / Blocked
 >
 > 小任務（Checklist）：
@@ -34,6 +39,7 @@
 ### 大任務 1：<名稱>
 * 目標（Goal）：
 * 交付成果（Deliverable）：
+* 任務複雜度提示（Complexity Hint）：Simple / Medium / Complex
 * 狀態（Status）：Todo / Doing / Done / Blocked
 
 小任務（Checklist）：
@@ -47,6 +53,7 @@
 ### 大任務 2：<名稱>
 * 目標（Goal）：
 * 交付成果（Deliverable）：
+* 任務複雜度提示（Complexity Hint）：Simple / Medium / Complex
 * 狀態（Status）：Todo / Doing / Done / Blocked
 
 小任務（Checklist）：
