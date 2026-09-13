@@ -1,4 +1,6 @@
-## 🏗 核准技術棧（Approved Tech Stack）
+> 候選範例，未核准：技術、版本、安全方案與效能數字不代表專案需求或新增依賴授權。選用時確認版本與維護狀態，將確認內容整理至 `memory-bank/tech-stack.md`，補上核准來源與量測條件。
+
+## 🏗 候選技術棧（Candidate Tech Stack）
 
 ### 後端（Backend）
 
@@ -46,7 +48,7 @@
 * 新增套件審核流程（Approval Process）：
   1. 說明引入目的與替代方案比較。
   2. 評估安全風險與維護狀態。
-  3. 記錄於 `tech-stack-py.md`。
+  3. 記錄於 `memory-bank/tech-stack.md`，標示待核准。
   4. 經專案負責人批准後方可使用。
 
 ## 🔐 安全與合規需求（Security & Compliance Requirements）

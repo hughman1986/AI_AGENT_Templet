@@ -42,6 +42,12 @@ If not available:
 * Start minimal.
 Never write blindly.
 
+Decision boundaries:
+* Use existing code, tests, and documented conventions for local implementation details; record material assumptions in `progress.md`.
+* Clarify unresolved product behavior, data semantics, architecture changes, or new dependencies before dependent implementation. Do not ask again for decisions already authorized in the conversation or project records.
+* Blank fields and candidate examples are not requirements or approval. Mark unknowns as pending instead of inventing values.
+* If documents conflict with observed behavior, report the discrepancy and reconcile it against authorized intent before changing behavior.
+
 ### 4️⃣ Minimal Change Policy（最小變更原則）
 * Prefer small, testable changes.
 * Avoid large refactors unless requested.
@@ -63,22 +69,30 @@ Automated tests are required for meaningful code changes so project behavior rem
 
 ## 📋 Memory-Bank Governance（記憶庫治理）
 The memory-bank must stay minimal and standardized.
-Only these core files should exist:
+Only these five core files should exist inside `memory-bank/`:
 * `game-design-document.md` → Outcome & product intent
 * `tech-stack.md` → Approved technologies
 * `implementation-plan.md` → Iterative task breakdown
 * `progress.md` → Iteration state
 * `architecture.md` → Current system structure
 
+* Candidate examples belong in `templates/` and are not active decisions. Record the selected, approved configuration only in `memory-bank/tech-stack.md`.
+* `implementation-plan.md` is the source of truth for task status and acceptance criteria. Detail the next meaningful step; keep later work brief.
+* `progress.md` is a current handoff snapshot: recent evidence, blockers, and next step. Reference task IDs instead of duplicating task lists.
+* `architecture.md` describes implemented structure and necessary decision rationale. Keep proposals in the plan.
+* Condense superseded progress entries after iterations; preserve unresolved blockers, test exceptions, and evidence needed for current decisions. Use version control for older history.
+
 After meaningful changes:
 * Update `progress.md`.
 * Update `architecture.md` when structure changes.
+* Update task status and acceptance results in `implementation-plan.md`; update product intent or approved technologies in their respective files when decisions change.
+* Record validation commands, actual results, and unverified items in `progress.md`. Implementation or planned tests alone do not justify Done.
 * Keep docs aligned with implementation reality.
 Do NOT add extra conceptual documents unless explicitly required.
 
 ## ⚠️ Strict Constraints（強約束條款）
 * Do NOT hallucinate requirements.
-* Do NOT assume unstated logic.
+* Do NOT invent unstated product behavior or data semantics; apply the decision boundaries above.
 * Do NOT silently change architecture.
 * Do NOT optimize prematurely.
 * Do NOT add speculative features.
@@ -89,6 +103,6 @@ If uncertain, ask or proceed minimally.
 ## 🚀 CLI Intent Shortcuts
 * "status" → Summarize current state
 * "next" → Execute next smallest meaningful step
-* "fix" → Analyze error and propose minimal correction
+* "fix" → Reproduce the problem, implement the minimal correction, and run regression tests; if blocked, report evidence and the missing prerequisite
 * "optimize" → Improve performance without behavior change
 * "refactor" → Improve structure without behavior change
